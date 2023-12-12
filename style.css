@@ -339,3 +339,104 @@ nav {
 .page4-right > h5:hover {
   color: #2563eb;
 }
+
+.page5 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2vw 0vw;
+}
+
+.page5 > h1 {
+  font-size: 4vw;
+  font-weight: 600;
+  padding: 0vw 6vw;
+}
+
+.page5 > p {
+  font-size: 1.2vw;
+  margin-top: 4vw;
+  color: var(--secondary);
+  padding: 0vw 6vw;
+}
+
+.page5-brands {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6vw;
+  padding: 0vw 6vw;
+}
+
+.page5-brands > img {
+  object-fit: cover;
+  height: 5vw;
+}
+
+.page5 > h3 {
+  margin-top: 12vw;
+  width: 50%;
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding: 0vw 6vw;
+}
+
+.swiper {
+  width: 95%;
+  height: 37vh;
+  margin-top: 4vw;
+}
+
+.swiper-slide {
+  border-radius: 1vw;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1vw 1.5vw;
+  background-position: center;
+  background-color: #2563eb;
+  background-size: cover;
+}
+
+.swiper-slide:nth-child(1) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/2-1-300x244.jpg");
+}
+.swiper-slide:nth-child(2) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/1-1-300x244.jpg");
+}
+.swiper-slide:nth-child(3) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/5-300x244.jpg");
+}
+.swiper-slide:nth-child(4) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/4-1-300x244.jpg");
+}
+.swiper-slide:nth-child(5) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/3-1-300x244.jpg");
+}
+.swiper-slide:nth-child(6) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/2-1-300x244.jpg");
+}
+.swiper-slide:nth-child(7) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/1-1-300x244.jpg");
+}
+.swiper-slide:nth-child(8) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/5-300x244.jpg");
+}
+.swiper-slide:nth-child(9) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/4-1-300x244.jpg");
+}
+.swiper-slide:nth-child(10) {
+  background-image: url("https://encontech.nl/wp-content/uploads/2023/10/3-1-300x244.jpg");
+}
+
+.swiper-slide > h3 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.swiper-slide > p {
+  color: #f7f7f7;
+  font-size: 0.9vw;
+  margin-top: 0.6vw;
+}
