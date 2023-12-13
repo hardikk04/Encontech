@@ -645,3 +645,96 @@ nav {
   line-height: 1;
   font-weight: 600;
 }
+
+.page8 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 6vw;
+}
+
+.page8-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page8-top-left {
+  position: relative;
+  padding-left: 5vw;
+  width: 49%;
+}
+
+.page8-top-left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2vw;
+}
+
+.page8-top-right {
+  position: relative;
+  width: 49%;
+}
+
+.page8-top-right > h1 {
+  font-size: 1.65vw;
+  font-weight: 600;
+}
+
+.page8-top-right > p {
+  font-size: 1.3vw;
+  line-height: 1.4;
+  margin-top: 2vw;
+  color: var(--secondary);
+}
+
+.page8-bottom {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+
+.page8-bottom-left {
+  position: relative;
+  height: 100%;
+  width: 58%;
+  overflow: hidden;
+}
+
+.page8-bottom-left > img {
+  border-radius: 2vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page8-bottom-right {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  border-radius: 2vw;
+}
+.page8-bottom-right > img {
+  border-radius: 2vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page9 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.page9 > img {
+  border-radius: 2vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -6,7 +6,7 @@ function loco() {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true,
-    multiplier: 0.7,
+    // multiplier: 0.7,
   });
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -149,15 +149,4 @@ page6H3.forEach((h3, index) => {
       }
     }
   });
-});
-
-t1.to(".page7", {
-  top: "-30vh",
-  scrollTrigger: {
-    scroller: ".main",
-    trigger: ".page7",
-    start: "top 100%",
-    // markers: true,
-    scrub: 1,
-  },
 });
