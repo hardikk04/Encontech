@@ -150,3 +150,14 @@ page6H3.forEach((h3, index) => {
     }
   });
 });
+
+t1.to(".page7", {
+  top: "-30vh",
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page7",
+    start: "top 100%",
+    // markers: true,
+    scrub: 1,
+  },
+});
