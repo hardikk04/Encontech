@@ -85,13 +85,68 @@ page2H3.forEach((h1, index) => {
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-    centeredSlides: true,
-  spaceBetween: 30,
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+function swiperJs() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    // centeredSlides: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
+swiperJs();
+
+t1.to(".page6", {
+  top: "-30vh",
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page6",
+    start: "top 100%",
+    scrub: 1,
+    // markers: true,
   },
+});
+
+const page6H3 = document.querySelectorAll(".page6-box-elem>h3");
+const page6Elem = document.querySelectorAll(".page6-box-elem");
+const page6Img = document.querySelector(".page6-right>img");
+const page6ImgArray = [
+  "https://encontech.nl/wp-content/uploads/2023/10/ship.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/10/geothermal.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/11/Food-processing.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/10/factory.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/10/desert.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/10/data.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/10/tanker.jpg",
+];
+
+page6H3.forEach((h3, index) => {
+  h3.addEventListener("click", () => {
+    page6Img.src = page6ImgArray[index];
+    for (let i = 0; i <= page6H3.length; i++) {
+      if (index === i) {
+        if (i === 0 || i === 1) {
+          gsap.to(page6Elem[index], {
+            height: "10vh",
+          });
+        } else if (i === 3 || i === 4 || i === 6) {
+          gsap.to(page6Elem[index], {
+            height: "20vh",
+          });
+        } else if (i === 5 || i === 2) {
+          gsap.to(page6Elem[index], {
+            height: "16vh",
+          });
+        }
+      } else {
+        gsap.to(page6Elem[i], {
+          height: "3vh",
+        });
+      }
+    }
+  });
 });
