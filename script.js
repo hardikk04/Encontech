@@ -66,8 +66,6 @@ const page2Img = [
   "https://encontech.nl/wp-content/uploads/2023/10/environment.jpg",
 ];
 
-console.log(page2Img[1]);
-
 page2H3.forEach((h1, index) => {
   h1.addEventListener("click", () => {
     page2RightImg.src = page2Img[index];
@@ -149,4 +147,142 @@ page6H3.forEach((h3, index) => {
       }
     }
   });
+});
+
+const page11Elem = document.querySelectorAll(".page11-box-elem");
+const page11Img = document.querySelector(".page11-box-right>img");
+const page11ImgArray = [
+  "https://encontech.nl/wp-content/uploads/2023/11/photo_2023-11-11-18.27.06.jpeg",
+  "https://encontech.nl/wp-content/uploads/2023/09/energies-16-06791.jpg",
+  "https://encontech.nl/wp-content/uploads/2023/09/photo_2023-11-11-18.26.51.jpeg",
+];
+
+page11Elem.forEach((elem, index) => {
+  elem.addEventListener("mouseenter", () => {
+    page11Img.src = page11ImgArray[index];
+  });
+});
+
+t1.from(".page1-main", {
+  y: 100,
+  opacity: 0,
+  delay: 0.5,
+});
+
+t1.from(".page1-footer>h1", {
+  y: 100,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page1-footer>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page2-left>h1", {
+  y: 50,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page2-left>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page3-left>h1", {
+  y: 60,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page3-left>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page5>h1", {
+  y: 80,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page5>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page6>h1", {
+  y: 80,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page6>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page7 h1", {
+  y: 80,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page7 h1",
+    start: "top 90%",
+    end: "top 55%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page10>h1", {
+  y: 80,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page10>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page11>h1", {
+  y: 80,
+  stagger: 0.5,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page11>h1",
+    start: "top 70%",
+    end: "top 40%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+t1.from(".page12>h1", {
+  y: 80,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page12>h1",
+    start: "top 100%",
+    end: "top 70%",
+    scrub: 1,
+    // markers: true,
+  },
 });
